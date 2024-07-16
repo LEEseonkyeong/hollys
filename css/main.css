@@ -282,15 +282,191 @@
 
 
 /* cont03 영역 */
-.cont03{}
-.cont03_list{
+.cont03 {}
+
+.cont03_list {
     display: flex;
     justify-content: space-between;
 }
 
-.cont03_list > li{
+.cont03_list>li {
     width: 24%;
 }
-.cont03_list h3{
+
+.cont03_list h3 {
     margin-bottom: 10px;
+}
+
+
+/* event 영역 */
+.event_list li {
+    line-height: 1.5;
+}
+
+.event_list li a {
+    float: left;
+    width: 70%;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.event_list li span {
+    float: right;
+}
+
+
+/* b2b 영역 */
+.b2b p {
+    line-height: 1.5;
+}
+
+.more {
+    margin-top: 10px;
+}
+
+/* news 영역 */
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td {
+    padding: 2px 0;
+}
+
+.col1 {
+    width: 75%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.col2 {
+    width: 25%;
+    text-align: right;
+}
+
+
+/* notice 영역 */
+.notice_list {
+    text-align: right;
+}
+
+.notice_list li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.notice_list li:first-child{
+    border-right: 1px dotted gray;
+    padding-right: 10px;
+}
+
+.notice_list li:last-child{
+    padding-left: 10px;
+}
+
+.notice_list li a {
+    display: block;
+}
+
+.notice_list li span {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+/* cont04 영역 */
+.cont04{
+    margin-top: 50px;
+    border-top: 2px solid #ba000d;
+    padding: 40px 0 60px;
+}
+
+
+/* footer 영역 */
+#footer{
+    width: 100%;
+    background-color: #ba000d;
+    padding: 30px 0;
+}
+
+.foot_inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.f_menu{
+    color: white;
+    font-family: 'NanumBarunpen';
+}
+.f_menu li{
+    float: left;
+}
+.f_menu li a{
+    display: block;
+    padding: 0px 15px;
+    font-size: 13px;
+    position: relative;
+}
+
+.f_menu li a:first-child{
+    padding-left: 0;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.address{
+    clear: both;
+    font-style: normal;
+    color: rgb(255, 150, 150);
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+
+/* sticker 가맹문의 */
+.sticker{
+    position: fixed;
+    top: 40px;
+    left: calc(50% + 500px);
+    z-index: 10;
+}
+
+/* pop_up 영역 */
+.pop_up{
+    width: 500px;
+    height: 700px;
+    border: 10px solid #ddd;
+    box-sizing: unset;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 100;
+}
+.close{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
 }

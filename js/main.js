@@ -19,4 +19,9 @@ $(function () {
         fade:true
     }); //slick
 
+    //pop-up
+    $(".close").click(function(){
+        $(".pop_up").hide();
+    }); // click
+
 }) // jQuery
